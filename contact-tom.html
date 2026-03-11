@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top of the World Tom</title>
+
+   <link rel="icon" type="image/png" href="Images/favicon.png">    
+<!-- Set the font style -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com" rel="stylesheet">
+
+<!-- CSS file link -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      <!-- The specific 'invite' for Fredoka One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav> <!-- 2. Added this tag so the CSS can find your buttons! -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-tom.html">About Tom</a></li>
+                <li><a href="health-safety.html">Health & Safety</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="price-list.html">Prices</a></li>
+                <li><a href="contact-tom.html">Contact Tom</a></li>
+                <li><a href="partners.html">Partners in Crime</a></li>
+            </ul>
+        </nav> <!-- 3. Closed the nav tag here -->
+    </header>
+       
+  <!-- Main Content -->
+    <main>
+        <div class="hero">
+            <h1>Fly Like a Bird in the Sky</h1>
+            <p>Once in a Lifetime Experience That You Should Never Repeat!!!</p>
+            <a href="#booking" class="btn">Book Today</a>
+        </div>
+        <br>
+        <br>
+    <div class="contact-container">
+    <h1>Contact Tom</h1>
+    <br>
+    <p>Ready for a spin around Ireland?</p>
+    <p> Send us a message.</p> 
+    <p>Tom will contact you when he is not in Flight Mode.</p>
+
+    <div class="contact-details">
+    <h3>Call Tom Today</h3>
+    <!-- The 'tel:' link makes it clickable on mobile devices -->
+    <p>Phone: <a href="tel:+353871234567" class="phone-link">+353 87 123 4567</a></p>
+    <p><em>(Best time to call: When the wind is low!)</em></p><br>
+</div>
+
+
+    <form action="#" method="POST" class="contact-form">
+        <!-- Name Input -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name at your own risk" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="I wouldn't bother, He never checks his email" required><br><br>
+        <label for="source">How did you hear about Tom?</label>
+<select id="source" name="source" class="contact-dropdown">
+    <option value="social">Social Media</option>
+    <option value="friend">A Brave Friend</option>
+    <option value="border">The Tipperary Border Patrol</option>
+    <option value="luck">Pure Luck & A Strong Wind</option>
+</select>
+
+        <!-- Message Textarea -->
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream flight and Tom will make sure it doesn't happen..." required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+</div>
+
+
+        
+    </main>
+
+</body>
+</html>

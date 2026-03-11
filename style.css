@@ -1,0 +1,266 @@
+/* 1. Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Page Styles */
+body {
+    font-family: 'Fredoka One', cursive;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e6e2f0;
+}
+
+/* 3. Header & Navigation Buttons */
+header {
+    background-color: #93a0d3; 
+    padding: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px; 
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;      /* Removes underline */
+    color: white;               
+    background-color: #b82424;  /* Red Button */
+    padding: 10px 20px;         /* Makes the button shape */
+    border-radius: 30px;        /* Bubbly corners */
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #4a5d9a;  /* Changes to blue on hover */
+}
+
+/* 4. Hero Section */
+.hero {
+    background-color: #98acef; 
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #4a5d9a; 
+}
+
+h3 {
+    color: #5a4a9a;
+}
+
+/* 5. Buttons & Images */
+.btn {
+    display: inline-block;
+    background-color: #b82424;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.gallery-img {
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+    max-width: 400px; 
+    height: auto;
+}
+
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b82424; 
+}
+
+/* 6. Main Content & Form */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-container {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+/* 1. The Big White Box */
+.contact-container {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 30px; /* Makes the whole box rounded */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 4px solid #93a0d3; /* Optional: A nice blue frame */
+}
+
+/* 2. The Typing Bubbles */
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 2px solid #ccc;
+    border-radius: 20px;     /* This makes the slots bubbly! */
+    font-family: inherit;    /* This pulls in your cursive font */
+    font-size: 1.1rem;
+    outline: none;
+}
+
+/* 3. The "Glow" when typing */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #b82424;   /* Turns Red to match the Tipperary run! */
+    background-color: #fffafa;
+}
+
+.submit-btn {
+    background-color: #b82424;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* Styling the dropdown box */
+.contact-dropdown {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 3px solid #93a0d3;
+    border-radius: 20px; /* Bubbly! */
+    font-family: inherit; /* Cursive! */
+    font-size: 1.1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.contact-dropdown:focus {
+    border-color: #b82424; /* Red glow */
+    outline: none;
+}
+
+/* --- Table Styling --- */
+.price-table {
+    width: 100%;           /* Makes the table fill the space */
+    border-collapse: collapse; /* Removes double lines between cells */
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;      /* Keeps the corners rounded */
+}
+
+.price-table th, 
+.price-table td {
+    padding: 15px;         /* This is the magic line that resizes the cells! */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.price-table th {
+    background-color: #93a0d3; /* Matches your header blue */
+    color: white;
+}
+
+/* Highlight that special Tipperary Run */
+.featured-flight {
+    background-color: #fff4f4;
+    font-weight: bold;
+    color: #b82424; /* Your balloon red */
+}
+.price-table tbody tr:nth-child(even) {
+    background-color: #f9f8ff; /* A very pale lavender */
+}
+.price-table tbody tr:hover {
+    background-color: #fff0f0; /* Light glow */
+    transform: scale(1.01);    /* Tiny grow effect */
+    transition: 0.2s;
+    cursor: pointer;
+}
+.featured-flight td {
+    font-style: italic; /* Makes the Tipperary run look extra 'speedy' */
+    font-size: 1.4rem;   /* Makes it slightly bigger than the others */
+}
+/* 1. This tells the browser HOW to shake */
+@keyframes border-shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-1deg); }
+  50% { transform: translateX(5px) rotate(1deg); }
+  75% { transform: translateX(-5px) rotate(-1deg); }
+  100% { transform: translateX(0); }
+}
+
+/* 2. This tells the Red Row to shake WHEN you touch it */
+.featured-flight:hover {
+    animation: border-shake 0.3s ease-in-out infinite;
+    background-color: #ffcccc !important; /* Makes it turn a brighter red too! */
+    cursor: help; /* Changes the mouse to a question mark for extra comedy */
+}
+.safety-pop {
+    background-color: #fff3cd; /* Soft Warning Yellow */
+    border: 3px dashed #b82424; /* Red dashed "Danger" line */
+    padding: 20px;
+    border-radius: 50px; /* Super bubbly shape */
+    text-align: center;
+    margin: 40px auto;
+    max-width: 500px;
+    font-family: inherit;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+/* This makes the navigation buttons look like floating balloons */
+nav a {
+    /* ... your current styles ... */
+    position: relative;
+    border-bottom: 4px solid rgba(0,0,0,0.2); /* Adds a 3D 'shadow' under each balloon */
+    margin-bottom: 5px;
+}
+
+/* When you hover, the 'balloon' floats up slightly */
+nav a:hover {
+    transform: translateY(-5px); /* Floats up! */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+/* 1. Define the 'Bobbing' motion */
+@keyframes bobble {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); } /* Floats up 20 pixels */
+    100% { transform: translateY(0px); }
+}
+
+/* 2. Style the Balloon and apply the animation */
+.floating-balloon {
+    font-size: 5rem;           /* Makes the balloon nice and big */
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    /* This makes it bobble every 3 seconds, forever! */
+    animation: bobble 3s ease-in-out infinite; 
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
