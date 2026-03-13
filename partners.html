@@ -4,31 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top of the World Tom</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png">    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* This handles the side-by-side layout for the Shorts */
+        .shorts-row {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
 
-   <link rel="icon" type="image/png" href="Images/favicon.png">    
-<!-- Set the font style -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com" rel="stylesheet">
+        .video-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 315px; /* Matches the video width */
+        }
 
-<!-- CSS file link -->
-<link rel="stylesheet" href="style.css">
-<style>
-    .video-container {
-        display: flex;            /* Turns on the flexbox layout */
-        justify-content: center;   /* Centers the video horizontally */
-        align-items: center;       /* Centers the video vertically (if the container has height) */
-        padding: 20px;            /* Adds a little breathing room around the video */
-    }
-</style>
+        /* The big video at the bottom */
+        .main-video-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
 
-
+        iframe {
+            max-width: 100%;
+            border: 5px solid #333; /* Adding a border so you can see the frame even if video fails */
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <header>
-        <nav> <!-- 2. Added this tag so the CSS can find your buttons! -->
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-tom.html">About Tom</a></li>
@@ -38,61 +53,52 @@
                 <li><a href="contact-tom.html">Contact Tom</a></li>
                 <li><a href="partners.html">Partners in Crime</a></li>
             </ul>
-        </nav> <!-- 3. Closed the nav tag here -->
+        </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-        
         <div class="hero">
             <h1>Fly Like a Bird in the Sky</h1>
-            <h2>A Once in a Lifetime Experience That You Should Never Repeat!!!</h2><br><br>
+            <h2>A Once in a Lifetime Experience That You Should Never Repeat!!!</h2><br>
             <a href="#booking" class="btn">Book Today</a>
         </div>
-        <br><br>
-              
-        <!-- /* Tom buying sweets, dancing crow, brother pre flight training video links*/
-         -->
-       
-<div class="video-container">
-    <iframe width="315" height="560" 
-        src="https://www.youtube.com/embed/Teg2Cg-It8Y" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        <!-- TWO SHORTS SIDE-BY-SIDE -->
+<div class="shorts-row">
+    <div class="video-box">
+        <iframe width="315" height="560" 
+            src="https://www.youtube.com//embed/Teg2Cg-It8Y" 
+            title="Pre-flight Training" 
+            allowfullscreen>
+        </iframe>
+        <h4>Allegedly one of Tom's many siblings runs a pre-flight training school.</h4>
+    </div>
+
+    <div class="video-box">
+        <iframe width="315" height="560" 
+            src="https://www.youtube.com/embed/saH055Q4AFA" 
+            title="Safe Flight Program" 
+            allowfullscreen>          
+        </iframe>
+        <h4>Tipperary Musician who runs a Safe Flight training program for Crows</h4>
+    </div>
+</div>
+
+<!-- THE WIDE VIDEO AT THE BOTTOM -->
+<div class="main-video-section">
+    <iframe width="861" height="472" 
+        src="https://www.youtube.com//embed/2r9--JC-qB4" 
+        title="Tom buying sweets" 
         allowfullscreen>
     </iframe>
+    <h4>Allegedly Tom on security camera, as a child buying sweets in Thurles Co. Tipperary</h4>
 </div>
 
- <h4>Allegedly one of Tom's many siblings runs a pre-flight training school.</h4>
-      
-
- <div class="video-container">
-    <iframe width="315" height="560" 
-        src="https://www.youtube.com/embed/saH055Q4AFA" 
-        title="Dance like nobody is watching you👀…#dance #dj #techno #festival #edm #rave" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>          
-    </iframe>
-</div>
-
-  <h4> Tipperary Humanitarian Artist who runs a Safe Flight training program for Crows</h4>
-
-<div class="video-container"></div>
-    <iframe width="861" height="472" 
-        src="https://www.youtube.com/embed/2r9--JC-qB4" 
-        title="And How Much Is..." 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-</div>
-
-       <h4>Allegedly Tom on security camera, as a child buying sweets in Thurles Co. Tipperary</h4> 
-
-        
+       
     </main>
-    <footer>Any person may use this website as evidence for any legal proceedings they 
-        or family members may be pursuing.</footer>
-</body>
 
+    <footer>
+        Any person may use this website as evidence for any legal proceedings they or family members may be pursuing.
+    </footer>
+
+</body>
 </html>
