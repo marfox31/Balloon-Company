@@ -46,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4a5d9a;  /* Changes to blue on hover */
+    background-color: #2a745d;  /* Changes to blue on hover */
 }
 
 /* 4. Hero Section */
@@ -54,16 +54,20 @@ nav a:hover {
     background-color: #98acef; 
     padding: 100px 50px;
     text-align: center;
+     /* ADD THESE 3 LINES TO MAKE IT A ROUNDED BOX */
+    max-width: 3000px;      /* Stops it from stretching to the screen edges */
+    margin: 20px auto;     /* Centers the box and adds space above it */
+    border-radius: 50px;   /* Makes the corners bubbly like your buttons */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 40px;
-    color: #4a5d9a; 
+    color: #2a745d; 
 }
 
 h3 {
-    color: #5a4a9a;
+    color: #2a745d;
 }
 
 /* 5. Buttons & Images */
